@@ -228,193 +228,250 @@ height: 100vh;
            
             }
           }
+          .analyse {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.6rem;
+        
+            > div {
+              background-color:white;
+              padding: 1.8rem;
+              border-radius: 2rem;
+              margin-top: 1rem;
+              box-shadow:0 2rem 3rem rgba(132, 139, 200, 0.18);
+              cursor: pointer;
+              transition: all 0.3s ease;
+        
+              &:hover {
+                box-shadow: none;
+              }
+        
+              .status {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              }
+            }
+        
+            h3 {
+              margin-left: 0.6rem;
+              font-size: 1rem;
+            }
+        
+            .progresss {
+              position: relative;
+              width: 92px;
+              height: 92px;
+              border-radius: 50%;
+        
+              .percentage {
+                position: absolute;
+                top: -3px;
+                left: -1px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+              }
+            }
+        
+            svg {
+              width: 7rem;
+              height: 7rem;
+        
+              circle {
+                fill: none;
+                stroke-width: 10;
+                stroke-linecap: round;
+                transform: translate(5px, 5px);
+              }
+            }
+        
+            .sales svg circle {
+              stroke: #1B9C85;
+              stroke-dashoffset: -30;
+              stroke-dasharray: 200;
+            }
+        
+            .visits svg circle {
+              stroke: #FF0060;
+              stroke-dashoffset: -30;
+              stroke-dasharray: 200;
+            }
+        
+            .searches svg circle {
+              stroke: #6C9BCF;
+              stroke-dashoffset: -30;
+              stroke-dasharray: 200;
+            }
+          }
+      
+          .stepper-wrapper {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+          }
+          
+          .stepper-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+          
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+          
+            &::before {
+              position: absolute;
+              content: "";
+              border-bottom: 2px solid #ccc;
+              width: 100%;
+              top: 20px;
+              left: -50%;
+              z-index: 2;
+            }
+          
+            &::after {
+              position: absolute;
+              content: "";
+              border-bottom: 2px solid #ccc;
+              width: 100%;
+              top: 20px;
+              left: 50%;
+              z-index: 2;
+            }
+          
+            .step-counter {
+              position: relative;
+              z-index: 5;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background: #ccc;
+              margin-bottom: 6px;
+            }
+          
+            &.active {
+              font-weight: bold;
+            }
+          
+            &.completed {
+              .step-counter {
+                background-color: #4bb543;
+              }
+          
+              &::after {
+                border-bottom: 2px solid #4bb543;
+                z-index: 3;
+              }
+            }
+          
+            &:first-child::before {
+              content: none;
+            }
+          
+            &:last-child::after {
+              content: none;
+            }
+          }
           
           
-    
-        .lead{
-    
-    
-          
-    
-    
-    
-    
-    
-          
-              
-              
-              
-                .cardContainer {
-                  display: flex;
-                  justify-content: space-evenly;
-                  gap: 10px;
-                  padding: 15px;
-                
-              
-                .card {
-                    background-color: white;
-                    height:80px;
-                 
-                    border:none;
-                    border-bottom: 5px #dcdce5 solid;
-                    padding: 8px 4px;
-                    width: 180px;
-                   
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    
-                     text-align: center;
-              
-                  .icon {
-                    font-size: 2rem;
-                    margin-bottom: 10px;
-                  }
-              
-                  .value {
-                    font-size: 2.5rem;
-                    font-weight: 600;
-                    margin-bottom: 5px;
-                  }
-              
-                  .title {
-                    font-size: 1rem;
-                    font-weight: 500;
-                  }
-                  .green{
-                    color: #86e68b;
-                  }
-                  .blue{
-                    color: #87c3ff;
-                  }
-                  .orange{
-                    color: rgb(255, 198, 93);
-                  }
-                  .red{
-                    color: #ff6060;
-                  }
 
-                  .voilet{
-                    color: rgb(255, 147, 255);
+          .leadDescription{
+
+display: flex;
+
+
+.leadDetail{
+    width: 60%;
+     padding: 10px 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     align-items: center;
+     justify-content: center;
+
+
+
+
+
+     
+}
+
+            .reminders {
+                
+                flex-grow: 1;
+                flex-basis: 300px;
+        
+                .task-list {
+                  width: 100%;
+        
+                  li {
+                    width: 100%;
+                    margin-bottom: 16px;
+                    background:#eee;
+                    padding: 14px 10px;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+        
+                    .task-title {
+                      display: flex;
+                      align-items: center;
+        
+                      p {
+                        margin-left: 6px;
+                      }
+                    }
+        
+                    .bx {
+                      cursor: pointer;
+                    }
+        
+                    &.completed {
+                      border-left: 10px solid #388E3C;;
+                    }
+        
+                    &.not-completed {
+                      border-left: 10px solid  #D32F2F;
+                    }
+        
+                    &:last-child {
+                      margin-bottom: 0;
+                    }
                   }
                 }
               }
 
 
-           
-              
-        
-                .planning {
-                  display: grid;
-                  grid-template-columns: 1fr 1fr;
-                  gap: 10px;
-                  margin-top: 20px;
-                  
-                 
-              
-                  .item {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 20px;
-                    background-color: #F7F7F7;
-                    border-radius: 20px;
-              
-                    .left {
-                      
-                      .icon {
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 12px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        
-                        // Define specific styles for icons based on item position
-                        &:nth-child(1) {
-                          background: #D1E6F9;
-                          
-                          i {
-                            color: #369FFF;
-                          }
-                        }
-              
-                        &:nth-child(2) {
-                          background: #F9E5D2;
-              
-                          i {
-                            color: #FF993A;
-                          }
-                        }
-              
-                        &:nth-child(3) {
-                          background: #E2EDD2;
-              
-                          i {
-                            color: #8AC53E;
-                          }
-                        }
-              
-                        &:nth-child(4) {
-                          background: #F9F0D3;
-              
-                          i {
-                            color: #FFD143;
-                          }
-                        }
-                      }
-              
-                      
-                    }
-                    .right{
-                        display: flex;
-                        flex-direction: column;
 
 
-         .details{
-            display: flex;
-            gap: 10px;
-         }        
-                  
-         
-         .body{
-            display: flex;
-            gap: 10px;
-            .badge{
-    padding: 5px 10px;
-    background-color: #eeeeee;
-    border-radius: 15px;
-                }
-         }
-
-         .footer{
-            display: flex;
-            gap: 15px;
-         }
-                    }
-              
-                    > i {
-                      cursor: pointer;
-                    }
-                  }
 
 
-                  .right{
-                    
-                  }
-                }
-              
-              
-              
-              
-              
-             
-              
+
           }
+         
+               
+         
+         
+          
+    
+        
       }
     
-     
+    
         
+      
+        
+
+
 }
 
