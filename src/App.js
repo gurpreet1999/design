@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
-function App() {
+
+
+
+import TeacherProfile from "./TeacherRegistration/TeacherProfile";
+import StudentQuery from "./StudentQuery/StudentQuery";
+import "./App.css"
+import TeacherPanel from "./Pages/TeacherPanel/TeacherPanel";
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <BrowserRouter>
+      
+        <Toaster />
+        <Suspense fallback={<div>Loading...</div>}>
+        {/* <Route path="/student" element={<StudentQuery/>} />
+        <Route path="/teacher" element={<TeacherProfile/>} /> */}
+        <Routes>
+        <Route path="/admin" element={<TeacherPanel/>} />
+        </Routes>
+        </Suspense>
+      
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

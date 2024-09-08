@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.tipbox {
+    display: flex;
+    gap: 1vw;
+    background-color: #CCE2FF;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+.tipbox i {
+    font-size: 1.5vw;
+}
+
+.tipbox p {
+    line-height: 1.5vw;
+}
+
+.tipbox p span {
+    font-weight: 600;
+}
+
+.checkbox {
+    display: flex;
+    gap: .5vw;
+    align-items: center;
+}
+
+.checkbox input {
+    width: 1.2vw;
+    height: 1.2vw;
+    accent-color: black;
+}
+
+.checkbox p {
+    font-weight: 600;
+}
+
+.fromto {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw 0vw;
+}
+
+.fromto .delete {
+    display: flex;
+    align-items: center;
+    padding-top: 1.2vw;
+}
+
+.wednesday .delete {
+    flex-direction: column;
+    padding-top: 2.5vw;
+    gap: 2vw;
+}
+
+.delete i {
+    font-size: 1.5vw;
+}
+
+.from, .to {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    border: 2px solid silver;
+    padding: 1vw;
+    border-radius: 10px;
+    margin-top: .5vw;
+}
+
+h6 {
+    display: inline-block;
+    font-size: 1vw;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.day {
+    margin-top: 2vw;
+}
+
+.btns {
+    display: flex;
+    justify-content: end;
+    gap: .5vw;
+    padding: 5vw 0vw;
+}
+
+.btns .back {
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: .8vw 1.3vw;
+    background-color: transparent;
+    font-size: 1.2vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btns .save {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: .8vw 1.3vw;
+    background-color: #ffab00;
+    font-size: 1.2vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btns .save:hover {
+    background-color: #ffaa00a7;
+}
+
+@media (max-width: 950px) {
+    form {
+        width: 90%;
+        gap: 3vw;
+    }
+    
+    .tipbox {
+        display: flex;
+        padding: 2vw;
+    }
+    
+    .tipbox i {
+        font-size: 5vw;
+    }
+    
+    .tipbox p {
+        line-height: 5vw;
+        font-size: 3.5vw;
+    }
+    
+    .checkbox {
+        gap: 2vw;
+    }
+    
+    .checkbox input {
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    .fromto {
+        margin: 2vw 0vw;
+    }
+    
+    .fromto .delete {
+        padding-top: 3vw;
+    }
+    
+    .wednesday .delete {
+        padding-top: 3vw;
+        gap: 2vw;
+    }
+    
+    .delete i {
+        font-size: 5vw;
+    }
+
+    select {
+        padding: 3vw;
+        margin-top: 1vw;
+    }
+    
+    h6 {
+        font-size: 3vw;
+        border-bottom: 1px solid black;
+    }
+    
+    .day {
+        margin-top: 2vw;
+    }
+    
+    .btns {
+        gap: 1vw;
+        padding: 5vw 0vw;
+    }
+    
+    .btns .back {
+        border: 2px solid silver;
+        border-radius: 5px;
+        padding: 1vw 1.5vw;
+        background-color: transparent;
+        font-size: 4vw;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+    .btns .save {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 1vw 1.5vw;
+        background-color: #ffab00;
+        font-size: 4vw;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+    .btns .save:hover {
+        background-color: #ffaa00a7;
+    }
+}

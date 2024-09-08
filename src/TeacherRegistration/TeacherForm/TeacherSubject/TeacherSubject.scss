@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 50%;
+    height: 90%;
+    margin: 2vw auto;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: .7vw;
+    margin: 1vw 0vw;
+}
+
+.search i {
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.search input {
+    width: 100%;
+    font-size: 1vw;
+    border: none;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+h5 {
+    font-size: 1.3vw;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-container .subjects {
+    width: 84%;
+    padding: 0vw 2vw;
+    background-color: rgba(192, 192, 192, 0.407);
+    border-radius: 10px;
+    padding-bottom: 1vw;
+}
+
+.subjects select {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 1vw 0vw;
+}
+
+.subjects .classes {
+    display: flex;
+    gap: 1vw;
+}
+
+.classes button:active {
+    border: 2px solid #ffab00;
+}
+
+.classes button {
+    padding: 1vw .5vw;
+    background-color: white;
+    border-radius: 5px;
+    margin: 2vw 0vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+p {
+    font-size: 1vw;
+}
+
+textarea {
+    margin-top: 1vw;
+    width: 100%;
+    height: 10vh;
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+.rembtn {
+    width: 15%;
+    height: fit-content;
+    padding: .7vw;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #ffab00;
+}
+
+.btmsub-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1vw;
+}
+
+.btmsub-container select {
+    width: 84%;
+    background-color: rgba(192, 192, 192, 0.407);
+    padding: .7vw;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 950px) {
+    
+main {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+h1 {
+    font-size: 8vw;
+}
+
+h3 {
+    font-size: 3.5vw;
+    font-weight: 400;
+}
+
+.search {
+    gap: 2vw;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1.5vw;
+    margin: 3vw 0vw;
+}
+
+.search i {
+    font-size: 4vw;
+}
+
+.search input {
+    width: 100%;
+    font-size: 4vw;
+    border: none;
+}
+
+h5 {
+    font-size: 3vw;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vw;
+    margin-top: 1vw;
+}
+
+.sub-container .subjects {
+    width: 100%;
+    padding: 0vw 2vw;
+    background-color: rgba(192, 192, 192, 0.407);
+    border-radius: 10px;
+    padding-bottom: 1vw;
+}
+
+.subjects select {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 2vw 0vw;
+}
+
+.subjects .classes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.classes button:active {
+    border: 2px solid #ffab00;
+}
+
+.classes button {
+    padding: 1.5vw 1vw;
+    background-color: white;
+    border-radius: 5px;
+    margin: 2vw 0vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+p {
+    font-size: 3vw;
+    margin-top: 2vw;
+}
+
+textarea {
+    margin-top: 1vw;
+    width: 100%;
+    height: 10vh;
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+.rembtn {
+    width: fit-content;
+    height: fit-content;
+    padding: 2vw;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #ffab00;
+}
+
+.btmsub-container {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vw;
+    margin-top: 3vw;
+}
+
+.btmsub-container select {
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.407);
+    padding: 2vw;
+    border: none;
+    border-radius: 5px;
+}
+}
