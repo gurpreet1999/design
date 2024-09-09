@@ -1,0 +1,63 @@
+
+
+
+.studentEmail{
+
+form {
+    width: 70%;
+    margin: 2vw auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+
+
+    h1{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    p {
+        
+    }
+    
+    .name, .mail {
+        display: flex;
+        flex-direction: column;
+        gap: .5vw;
+    }
+    
+    .name input, .mail input {
+        padding: .7vw;
+        border: none;
+        outline: none;
+        
+        appearance: none;
+        
+        font-size: 1.3vw;
+        background-color: transparent;
+        border-bottom: 2px solid black;
+        box-shadow: rgba(134, 134, 134, 0.3) 0px 1px;
+    }
+    .name input::placeholder{
+        color: rgb(167, 167, 167);
+        font-size: 25px;
+    }
+    
+    
+    
+    button{
+        padding: 12px 16px;
+        background-color:rgb(255, 171, 0) ;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 5px;
+        width: 50%;
+    }
+
+}
+
+
+
+}

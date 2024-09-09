@@ -10,6 +10,9 @@ import StudentQuery from "./StudentQuery/StudentQuery";
 import "./App.css"
 import TeacherPanel from "./Pages/TeacherPanel/TeacherPanel";
 import AdminPanel from "./Pages/AdminPanel/AdminPanel";
+import BecomeATutor from "./Pages/BecomeATutor/BecomeATutor";
+import HowItWork from "./Pages/HowItWork/HowItWork";
+import TermAndCondition from "./Pages/TermAndCondition/TermAndCondition";
 
 
 
@@ -20,11 +23,16 @@ const App = () => {
       
         <Toaster />
         <Suspense fallback={<div>Loading...</div>}>
-        {/* <Route path="/student" element={<StudentQuery/>} />
-        <Route path="/teacher" element={<TeacherProfile/>} /> */}
+      
         <Routes>
-        <Route path="/" element={<TeacherPanel/>} />
-        <Route path="/admin" element={<AdminPanel/>} />
+            {/* <Route path="/student" element={<StudentQuery/>} />
+        <Route path="/teacher" element={<TeacherProfile/>} /> */}
+        {/* <Route path="/" element={<TeacherPanel/>} />
+        <Route path="/admin" element={<AdminPanel/>} /> */}
+        {/* <Route path="/" element={<HowItWork/>} />
+        <Route path="/" element={<TermAndCondition/>} /> */}
+
+<Route path="/" element={<StudentQuery/>} />
         </Routes>
         </Suspense>
       

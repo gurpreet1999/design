@@ -6,7 +6,7 @@ const StudentClass = () => {
   return (
     <div  className='studentClass' >
        
-    <main>
+
         <h1>Great choice! Which level are you looking for?</h1>
         <p>This helps us to find you tutors with the right experience</p>
 
@@ -52,7 +52,7 @@ const StudentClass = () => {
 
 
         
-    </main>
+
 
 
 

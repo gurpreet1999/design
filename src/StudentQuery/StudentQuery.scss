@@ -1,0 +1,66 @@
+.multi-step-form{
+
+
+
+   .progressContainer{
+    display: flex;
+    gap: 20px;
+
+
+
+
+
+    .progressBar{
+    
+        width: 100%;
+        height: 4px;
+        overflow: hidden;
+        background-color: rgba(255, 171, 0, 0.3);
+       
+    
+    }
+    
+    .progress{
+        height: 100%;
+        width: 50%;
+        background-color: rgb(255, 171, 0);
+        transition: 0.4s;
+    }
+    
+    .backIcon{
+    width: 50px;
+    height: 60px;
+    fill: rgb(134, 134, 134);
+    
+    }
+    
+    .crossIcon{
+        width: 50px;
+        height: 60px;
+        fill: rgb(134, 134, 134);
+    
+         
+    }
+
+
+
+
+
+
+
+
+
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+}

@@ -5,7 +5,7 @@ const StudentEmail = () => {
   return (
     <div className='studentEmail'>
 
-<main>
+
         <form action="">
           <h1>Nice to meet you, ddd. What’s your email?</h1>
           <p>Let's get your account set up so you can start browsing tutors.</p>
@@ -19,7 +19,7 @@ const StudentEmail = () => {
           <button>Next</button>
         </form>
         <p>By clicking next you agree to our Terms and Conditions and Privacy Policy</p>
-      </main>
+ 
 
 
 
