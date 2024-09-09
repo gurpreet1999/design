@@ -28,6 +28,7 @@ const StudentQuery = () => {
 
 
      {/* <StudentName/>     */}
+     
     {/* <StudentAge/> */}
     {/* <StudentEmail/> */}
      {/* <StudentClass/> */}
