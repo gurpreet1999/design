@@ -6,6 +6,7 @@ import StudentSubject from './StudentForm/StudentSubject/StudentSubject'
 import StudentPreference from './StudentForm/StudentPreference/StudentPreference'
 
 import "./StudentQuery.scss"
+import StudentAvailability from './StudentForm/StudentAvailability/StudentAvailability'
 
 const StudentQuery = () => {
   return (
@@ -29,10 +30,11 @@ const StudentQuery = () => {
      {/* <StudentName/>     */}
     {/* <StudentAge/> */}
     {/* <StudentEmail/> */}
-     <StudentClass/>
+     {/* <StudentClass/> */}
 
      {/* <StudentSubject/> */}
      {/* <StudentPreference/> */}
+     {/* <StudentAvailability/> */}
       </div>
   )
 }

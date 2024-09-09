@@ -4,7 +4,7 @@ import "./StudentAvailability.scss"
 const StudentAvailability = () => {
   return (
     <div className='studentAvailability' >
-        <main>
+     
 
 <h1>When can the child take lessons?</h1>
 
@@ -146,7 +146,7 @@ const StudentAvailability = () => {
 
 
 <button>Continue</button>
-</main>
+
 
 <div class="duration">
 

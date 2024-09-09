@@ -5,7 +5,7 @@ const StudentPreference = () => {
   return (
     <div className='studentPreference' >
 
-<main>
+
         <h1>More Prefernce</h1>
         <p>Age of tutor:
            </p>
@@ -19,15 +19,15 @@ const StudentPreference = () => {
 
        </div>  
        
-    </main>
+    
 
-    <main>
+
         <h1>do you hava a gender Prefernce?</h1>
         <div class="cardContainer">
             <div class="card"><img src="./img/avatar.png"/>Male</div>
             <div class="card"><img/>Female</div>
             </div>
-    </main>
+ 
 
 
 

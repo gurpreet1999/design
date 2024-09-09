@@ -5,7 +5,7 @@ const StudentSubject = () => {
   return (
     <div className='studentSubject' >
 
-<main>
+
         <h1>Which subject would you like help with?</h1>
         <p>We'll find you an expert tutor from our network – which covers over 30+ subjects.</p>
 
@@ -39,7 +39,7 @@ const StudentSubject = () => {
    <input/>
 
         </div>
-    </main>
+
 
 
 

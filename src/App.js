@@ -25,14 +25,15 @@ const App = () => {
         <Suspense fallback={<div>Loading...</div>}>
       
         <Routes>
-            {/* <Route path="/student" element={<StudentQuery/>} />
-        <Route path="/teacher" element={<TeacherProfile/>} /> */}
+      
         {/* <Route path="/" element={<TeacherPanel/>} />
         <Route path="/admin" element={<AdminPanel/>} /> */}
         {/* <Route path="/" element={<HowItWork/>} />
         <Route path="/" element={<TermAndCondition/>} /> */}
 
-<Route path="/" element={<StudentQuery/>} />
+{/* <Route path="/" element={<StudentQuery/>} /> */}
+
+<Route path="/" element={<TeacherProfile/>} />
         </Routes>
         </Suspense>
       
